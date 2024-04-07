@@ -4,6 +4,11 @@
     font-family: sans-serif;
     
 }
+body{
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: black;
+}
 /*Hero*/
 .hero{
     position: relative;
@@ -346,3 +351,21 @@ span{
   .contact input:focus{
     outline: none;
   }
+#btnScrollToTop {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+#btnScrollToTop:hover {
+    background-color: #333;
+}
